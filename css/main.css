@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%; /*ancho*/
+    height: 60px; /*alto*/
+}
+
+header nav {
+    display:flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-sect{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none; /*elimina puntitos*/
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;  /*Cambia el cursor de la flecha a la manita*/
+}
+
+nav .nav-right-sect a{
+    margin-right: 10px;
+    color:rgb(21, 21, 21)
+}
+
+nav .nav-right-sect .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+
+}
+
+/*Imagen estilo*/
+
+/*.carac{
+    width: 30px;
+}*/
+.cir{
+    border-radius: 60%;
+    margin-left: 15px;
+    width: 30px;
+    height: 30 px;
+}
+
+main{
+    width: 100%; /*ancho*/
+    height: 310px; /*alto*/
+}
+
+/*
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.C1{
+    color:rgb(50, 94, 189);
+    font-size: 60px;
+}
+
+.C2{
+    color:red;
+    font-size: 45px;
+}
+
+.C3{
+    color:yellow;
+    font-size: 45px;
+}
+
+.C4{
+    color:rgb(50, 94, 189);
+    font-size: 45px;
+}
+
+.C5{
+    color:green;
+    font-size: 45px;
+}
+
+.C6{
+    color:red;
+    font-size: 45px;
+}
+*/
+/**/
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px; /*para alejar del bottom*/
+}
+main .main-logo img{
+    width: 320px;
+    height: 110px;
+
+}
+
+/*input section*/
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border:1px solid #dfe1e5; /*le da un border al elemento*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border:none;
+    width: 550px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 1px #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    background-size: contain;
+    /*will-change: 15px;*/
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 14px;
+    padding-left: 6%;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    padding-right: 1%;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 7%;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin:0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 36px;
+    /* Fondo de botones */
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /* Color de letras antes de hover */
+    color: #3c4043;
+    /* Redondeamos botones */
+    border-radius: 4px;
+    /* Margen interno */
+    padding: 0 15px;
+    /* Margen entre botones */
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow:0 1px 1px rgba(0,0,0,.1);
+    /* background-color:#f8f9fa; */
+    /* Cambia borde al hacer hover */
+    border:1px solid #dadce0;
+    /* Cambia color letras (muy leve) al hacer hover */
+    color:#202124;
+    cursor:pointer;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+
+    display: grid; /*cuadricula invisible*/
+    grid-template-columns: 1fr 1fr; /*divide en columnas*/
+    align-items: center;
+    bottom: 0;
+}
+
+footer ul{
+    margin: 18px;
+    list-style: none; /*quitar los puntos de la lista*/
+    display: flex;
+    padding-left: 8px;
+}
+
+footer .footer-left{ 
+    justify-self: left;
+
+}
+
+footer .footer-right{ 
+    justify-self: right;
+    
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
